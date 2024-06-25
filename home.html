@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Services</a>
+                            <ul class="submenu">
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">Vehicles</a></li>
+                                <li><a href="#">Hotels</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Type</a>
+                            <ul class="submenu">
+                                <li><a href="#">Domestic</a></li>
+                                <li><a href="#">International</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Package</a>
+                            <ul class="submenu">
+                                <li><a href="#">Monthly</a></li>
+                                <li><a href="#">Yearly</a></li>
+                                <li><a href="#">Weekly</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Our Services</a>
+                        <ul class="submenu">
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Vehicles</a></li>
+                            <li><a href="#">Hotels</a></li>
+                        </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World</h1>
+            <p>Find your next adventure with us!</p>
+            <a href="book.html" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Featured Packages</h2>
+        <div class="package-card">
+            <div class="package-image">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFhUXFhcWFhgYFxgXFxgVFxkYGBoWGBUYHSkgGBolHRgXIjEhJSkrLi4uGCAzODMtNygtLisBCgoKDg0OGxAQGjAlHyUtLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tK//AABEIAK8BIQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAABAAIEBQYDB//EAEUQAAIBAwMCAwUEBwUHAwUAAAECEQADIQQSMQVBIlFhBhNxgZEHIzKhFEJSscHR8BUzcpOyF0NTYnOC4cLS8RYkNJKi/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECBQQDBv/EACcRAAICAQQCAQQDAQAAAAAAAAABAhEDBBIhMUFRExQyYXEFIoEj/9oADAMBAAIRAxEAPwDhFGKcF8qazqJl0ECYLrMfCZr6VzjHtmIot9IMURUO91K0nLT8AT+fFPt9Qtld0nniBPx5rzeoxryV8M/RKApwqIvUEgkAmOcgY8zgxRTqSHdtgkCcNPaZ7SKh6rH7K+myeiZFEVCXqaZIKEKAXIJwOeN1Ps9StOW2OCFkwVPGfJvh+VR9ZjH9LMmCnRUDSdZtOSAQWztCg/UgtM84rtp+q2XIQHxkiNwIAHfAJng0vrIfkf0kyUBTxUK/1O2HNtWEgx+EkTBj9buaiP1faSGu2xtwfAwzAx+P1p/WQJ+kmXYp4qvv9SW2qh3thjmc5Hycintr9okm2D5bmnmOAp8qa1eNielyFgKcK4W7xgMQMiRDCeY4bbiu1skiQrHE4hsY7IT51S1GN+SHgyLwOoxXP3y9zt/xAr/qArorA8EH4EH91einF9M83GS7QopRTopVRAIpUaVAhUaVGgARTqFGgBUaVGkMQoilRoKFRFICiKAFRilRikMUUaUUaQwRSo0qAPJL193fb4mWeS0yMZj4mm20uKWVojsAIIEmDI9BVjoNMxBMxI8JEA/HHoKkNptx4PB7mSOwJPbNZJsXRWLpTbJJfcIiCRkkTI+tP0/ThtKE4LAiCTxHeOCQRVvp9GF2iBAkjjzmrTS6F2WQrR55PrjFFBZnrWnVBBB3DkAdsdzzUnS6YCXVDkCOAYgCD9BV/wBL6SjvcW5uBEKYXg+LJn5VYaDoltdu9i08YAE9wIme/wBKltD5MqmnAn7qd0SJUDyzn0p+n0o3lWUZkiMxOIx8q3NjRaeFZUQiMNCnjBzBjIqPo9La9+ty2Rsdbnw3ArgCBU7kFMx9rRC1xbEglfxgEmfxExg13tdNZiHKEdxknGSDMV6Ety0bpthl3jLDJgec7YjPn3rravqTsV13KASBJgQJ7cUt4UecX9JtKlrZzEgHJ8UgiQJ5roegPdLBLbEA7jMZ3gHB4FbLVWrT3A0rv97b3ZkjIEnHEDirUe6DbZUEgSo28QTO350bw2nn7+zdxo3WbkCOdv4RIxn1FDq/RCkPcRo/DLLImDjE+c16TCFgIWSsCduT5RUf2h06NauSBuAYr4SYIXkbT34mjew2nntzopfaYLAclQ2AARyvAzNHWaBk2qrwQAJVx3n8Q7fq5r0mzp1VYRtpJPM5Ld/jjz712KSzgnuBGCI2jzEnmlvHtPN9db1VvYQxAjyDSYYzIOTipHR9JeNv3t0eI8krBIOQQf2cn61surdKtvbaLaBoJLKiz4QThhkf+adoul7bW0mWIWNzGOJOSMkzn4Crhl2tOiJ49yaMvSipOtsbGj5io9bMJKUU0Ys4uMmmClRilVEiogUqNAhUopUaBio0hRoGKjSo0FCoxSpwpACjRFGgYKIFGlSGKlSo0AYTSXtMLbeIi4sEKSIYGQYgYIMdz3rtpOqWiBFsb1mcNtKEKRlic859awur0M6gIr4LATBj1xW56fpT72RbBbaAAfwhsAEg9qyKfZs8IlaXqYeyPuQH3HaSVEqQIwkcGa7f2pce0LB2m6CVJktgeIbvMiT8OO1Ms6YqzeNdxPibadqQIIWOWx8qsem6RUQhAVYnLEAn5CfpmoaQWRbOsusHCQ9wW7YLKCoBVedrd4jmqy9rrljSlFYMysXwuFBWCAQefM9qv+g+7+/WXIlVJwDhMmfOa76zSpc0tyzaldywsz5QdwiRPw71LoasyHsx13Vahl0pc7CDjExiROMRPetZp91u6LFjeSEJbcQdjMQN2D4cA4+HeqboXsubF63dNwkryIIU8Ax4Z/n6VrNH4tSYE/dD9WP1z8KcqXQWU9vSX7V+QXe65YFpb3ajOSe7VMsaG9aZjbLF7i+Jyx2KCewPLcZjvV0iSWUhRluZHJPkK5tp2L7gCFxgE7e8kfHHlxUWFFRa6a9s/wB6Sz3UH4jtEk5CmCxnv6/WZoulPavPd94znbOyQAxIgkls/nTNYLhuWgw/3qRzjDGfyq5TcHJ9BzuB+gxQ2NI896v1bVrqSxQkoRtGzcoHMcR35q3s29RqLY1NwrGxiUjMQSAokRzU/X6C69xnBBk9p8sTuHpVnorTW9EyXTJCPMEEQR2n1r1moKKcWeUJSbakiHrLGrOptkiLeMAtAUfAgljXWzqdS2oUlHW1ukyWXAAndyWJ8v8A5q6RSFBzIPHYkxmAaVkuHPxzG7iO8jjFeNnqU+p1967e2rbcWiCCdowAMli0R6c1O6lr/wBHtW9oLMyrGDtUQJJ28+Xzqffyrmc7W8uI9RXfS3F92mZhFnkx4Qe3xp8AZ3rFskBiAGxuA7FuRnyOKqa1PVUB39wcfkKy5WMVpaLJcXH0ZmuhUlL2CKVGlXccIIoxRpUACKNGKMUDBFECjFEUhoApwFIUYoKEKNKiBSAUURRpCgYoo0qNKxgijRilQBhtB0yy1zcwQsMgLlgPNjyTVz0fSbrzEyYZUHbMg9iKr7jXlYZ2HbtmAZEz3nuan+zugUtLuT94ogkxmMnNY1ujaLC8GCuFBUbmAnxSQTJ/F5U5dqiSUGcbiBx28/OqfUaZFB+/UmD+IrhuwILTzVJ0rXMyv+kLaUjbsPvFHnOATJwKhDNX0TW2ZJ3hd7szL5ASM+WBNTLuvsKJFyDMmBOcehqn6L1fS202u3ilpgOcNIA4jyqZd9p9MQIDYPa2f3YpPsCSvWbYOGYj/Cf5Uun9SL3bje7dvwqsDgDcckxzM1T6j2qtZH3uYyLeflLHPrFDo3tLb04uGHO4g5tjsDz4qANR/a+WAtXCAxj7snv57a6J1IFfDbvf5R+faqJPbS12ttBJI8IznjmqI9aP6UNT+kXFtb1PutrEcRtkPA4nikkBqb3Ui2pRSlxgFY7dniLRAO08AAk/Orf+1FUQyXlxx7vd8MqD51kf/qKyuoF4LcwjSNoJJYTMlvIirRPbKw5/urhx+yP/AHeUU2gRc/2jaI3eOORNl47x+r60zqPWU90UBndtQgoy+EmDyBJjyqrHtbpxiLwzMAHjOPx/1FM6j7Taa4gEvIdWllPAIngntSSEaxOrWQPFcAzEXPB9NwE8fnTk1VpzzbJJAw4/ryqof2l0dyD7zIPcOcZxkH8vKqPr/XStxTpVs3U2ZDKh8U9phuIooZttdct27VxzOFPBLcjyn1FO0dqJ/wAKDzyFjv8AwrN9bGnbTMbRT3hAkJEgkScLmJFXWl0Vghdsq0ZKsV7SfQ0ASNXZMTMnE4jt5TWa6hbhsd81fvp7rA7bziMQ6o4J+gP51mOuai9aCbgjhrirIBSN2JglpGe1e2nybJ2zx1GJ5MdLsEUqCbv1lA+DbgfnAP5U+tiE1JWjGnBwe1go0aVUSCKMUYo0ACKIFKnCkNAijRogUFIAFOpRRpDFSpURSGKKNKjQMVKjSoA8qGq1N0ibziQzAbiDjuAvAqLYR2PjdiNrnJM+ETOTg9q4e8RiAb7kgQPERHoIArrY6eCrNBIkL3InmKx+DbJen06naHI8SmMiJzE+tc7gtAW4dQf1sgxnvHzqHfa0gAKgmBAHz58jUjQalW3Rbb4gSB6GBij8B+SRaa2t17m8FTu4k+QHHPapWm1NqBJg8mEfv6xVr0XpSXNHecAbhdXafoCPzNVXXbHuSEXxNADADEt2HfyqdwUdNQ9ojau4n9bwEROeTXfRtaZmwRC8e7kwABJ7eZ/7TUfR/pSj+68J5whI7SA3ePnWn9iLaG5flQw90RkeczI7VUlKKtqiE4t0nZn1a0Nkb/C0n7teD5Dd8K7C9p4I+9/FuMW0GPTxefarPrhs2tuyyrO/A8RHbO2Z+VU/uNRu3CykY8Ph7Rjn0pRUpfarCTjH7nR0u39PuMm4JwCbYPpAhsGP3UwvYWR45gAH3RxH/dUjRaZWvWcYZxuU8hgcjbGPhWi9pdJp097ca0JDeZyScCPM1DbRaozVp9NuWS2AJm0Tn5H1p4Ojz94yycTbcDn4QBTBbvwSlhFGCBgY+Baa6XRbvWnO33dy2ACoAUGTmQBznniBx3NOMl2qJUovpnb3WnXYyX1ODIYOvPkSM/lXSz06y74vIQVGFdPTHiYZxWlPR7As2XdBAtbiZIGCxJbPFZLVXLBM+4YLPmQInESDn51KbKaRZXeiSBscckcqDiB2OeO1Vmq6TqlYlGgTiA+Y8sfGpmn0um1CMEt7LiyYyZA45PJ/qMSOl+zyPYtsWcHcwYqeI27ZX5+hpqXkTj4OSXOoW/w3WHkPegfkWBpajqmuIC3LRdQQwlScgyDuXMz613v2vctsXXOCO25jHoeQK6a9dVbte+S5bvAczbUkDsSQIgxyCRIj4UpWNxo6aHrpusqNYKEg5DY4nIImrUV1t3nayjNZVVYYO8kzM4WTiOTjNcwK09L9hkayvkFRpRRAroOQAFGKIpUDEKNKKNA0IURSiiKRSEBRpURSGhUaVGKCgUYo0aQDaVOilQB5v7O9Fti2HZAzNkbgDA7DNSNEg/RNU2xo9+gAwGWDj08x86tOnWittATJCj0qV0ZCdHqSO95Rx6j+prj1cVDHFI7dLNzyzbMLY6ejan3L9mIM4J29uTyRGK2KWgqwAAACAO3HEVF1WmVOo3hA/G8fPPy71YXVhW+B/dXvpEvibPDWybypHL2f0939Ab3RXd78EhsjaBI/MCuD6cjWX948aHbIGJIG6PKYGKt/ZXRKNF5ze8vQ0Oq2wNXqABjep+ZUGuHSq8x26xtYWRQtdPZOw5bWQwVjbYKR25yRxNELUr2JU79Sc/g9O+7t3rr1/wBqOL+O+5kPVaV1uIbjbz7ldrQB4S742jgyDmiBVp7QDxWsR9yv+u5Vaor20dLCjw1rbzMi2S36ZZGCu4HjPlBIyRiates6a6Ln3jB0947JiIIAA3efhMD4VG0YnVWADmR+81ofapODM/eP8oAripPU/wCndua0t/gzwFQtfpnh3twPBDmJkb1AHpyc1YBaV/8AurnqF/1Cu7Vc42Z+kbWVFr1axdFuydw937tAQR4pknB8pj6VXLWk6wkaRM/q26zaCvHRL/m/2e2vb+RforbOj2atCiyHVyQMQQJn+Pyq50NwppbUW2IcvlRt2zAG4yJwe0xQ0Z+/SP2Lv+g1a9JU/oEnOG+XHFceWKWavyjuwybwW/TM5qOj2WEbAvkVEEfz+dVvSr5s+/s3CI2MBPBJxifMEN8UFaJRVdpbQF/UeZs3Oc825jNdGshFRTSOfQZZSk4tl6t1TprCkifdqYkTndx6YqNFXPRtOp0tltq7vdxugFonifKqq5bgkeRqdDPuJX8hDlS/wZRoxSrQM0UUqNKkMFGlFEUDQqcKVGKRQBRogUaQwCjSFOApDAKNEUYosYKVGKNKwMXb1otoqsdxCiSAxn8qvOiQmkurDxuVixUCSTxG7jHNYn+0rjD8Ns+fhPfjlorsOu6ppT30A8gBAPCfIjtWbmzSypJ+DWxYY422vJcdTuqdTc1A3ncWMbV8MxHiz2EVH1WscrBVl34EyPl+HOPKq9uo6v8A4789m2/kK56nXXyQXvuT4QIZuOO3eBNSsmRR2p8DeKEpbmuTcWNFcs6dhtUhWQhRuwx3eIsTnyj1qFrLN28zv7sKzMCzBnyYAiCSAIispa1d8wWu3fxR+JziDnmuL27gYj31yJwPF6f+a81uTtFumqZptRoHRN7EHmAWuBj/ANuKvfZzR3fdK6OE3BvD7sQcsBucmSMDPNYB9NcAgXLhM9547UU0zzG9/wAh+Rpycn2xRUV0j0hv0ojaXtiAB/dg/mTmoWt6S9w7rjpMZYWysAHzD81iv0e+xG83JIOTmAMCPp+VdrvTruFBcwDHhgCJJ7eKpSa6G6Zo+g6VvesFYqEUbXKCTLHvcJjv37Va9V6fdvAK91SASQZKsSfPYw8hiK8+vdJuld0uYPcHuPLbS/si8GH3bHHkYkAT++jzdhXFGtHs+QY95j43D2891c/0b3dxLMhjcdNx8bqAGmPEYPPpWeXoVyGO1h4RjbMHk/1602x0y+FWA2Wj8MdvMinufsnavR6X1DTXnQW96MuOxQiOBgtNVLdGvN+BkBUQfE+TkzlM4gYxWQPTtQHIEg9uAfiD8alrpdUCdtwgwT/egcRHD80RnKPTCUIy7RbsHsObjkHYrLtJIM3FPEqJgc1obW9NKlsIIdQAQ+5gWUvLAqoAwe/esLft6omGdjEQGctg88scUU691JS6w5VJjJOFO0QCD5jtT3SbvyCjFLb4LxbxgETmOUf+E1G0aEXbty6wRDbcBjugsU2gZAqCPanWsAWsmJPKZ4HPhHnUHqPXGup7u9bIXkbF2mfWWg9+1XPLkmqkRjw48buJ6V0i/aXTpbF0EqvcMvOcbhVT1jUojbmOD3AJGPh8vrVFpvbK0FCvakQF8W7ECOwPauGq6tonj3YNsyJ2ws/H8P8ARqcUpY5bkVlhHJHay/S8pMAic4+GDT6xdzqyjVBPetsgEEXHnIO4EzJI5jj51rE1KKuWkDliZ+ZnMetaENUnxLgzcmka5hySYoxQtsGEqQR6U410Jp9HK01wwUYqnsdeRr7WCCCGKA8gsO3pVyKLTG4tdiogUQKIFIaBFECjFGKLGCKNECiKVlAinClRApWMFKjFKgDyMh1G/wABBb8O2Jx5kmu+pLC4VDbQAIgCJPOTWT6JrnLlT+HacdlOIP8ACtt1/RmzedRO0pbYE8eJQcn0rKTNporbjAYbUEHGAeOJmBUdiVzvJiCpmc+c9vhVB1i9Bxgtn+dO6FdJLoSSNs/AggT+dSMv7+me3ch5hlDrDdnkyB5/yqQNisDcuNA7SxE/Wr/q9q0ygwDct6RWAyDyx3eoA/fXnXXtUxfaCQO/rUp2No0rFdrMrs0ceNsfxFW2la9d0W8FiwuhI3T4YxknBEfOTXnPSmIurBAmQZmCPLFemdDvra6eu8xv1EcEyACYgDkxSn0CRW6zTvbCm5uUlcgt6x51w07rccgXIEGAWI/dVT7b69mvsokL2/w8AfGBkedZtJUyDBHBGCD8aEgPTfZ3Qi7qrVuXUMQWEw0qMH4Znyrve6FcTez8czugZPMDifOIpnsBqjc1ti47Ak29zFf2og8j54qH7e9TItWhacxeNxmM5AQgKI7Y9PhSfYeAKVJ2m5t+LNB+nxqRrNG9pEuK2N0hgSVLc7SDgketecgEGZM+ff61sujdQa7pSjkTbuggk5II7fMj5/OqoRvOp9DvG4pS8xHu1gm4Q0xJkjJ9JzVJdv3UMfpkHgj3rsf3GrD246mU07bXC3ltWlgGDDcmJ5AA/wD24xXkZutM7mn4mpimxnrD6fUNa94NU1yIwrMxHrxBA86qkfWtaBtkOWd1MqpYxGfEOWZSePhFVvsR1cyVZwMMpJwMgx8JyPnWr6Y6ro0J5L3WUnE7ELbQf1pKxH/N601wJlVpreuSfDaMZgpbPkOFIPEVLOt1qobjWEKryR7wD57XgfSvO9V1O7cfe7ST27AeQ8hWt9jutuX903iVgVAOeATt/fHkYjvNyQIvret36db36OW3kiAZyPxZZDEYgk59KijqmmGH0jDEZS0Tx3I2k/Gr/wBkb6poZydrvx3gTj6R8SKqfaHXa2397K+6DQVhdyk9mEk+WQY+GKlS5obiYbqF+2dU7W12pML2IxE5JIM9pPlWssdOtXLKv755ckOiuNvhIM7Cowcd6xT3Tevu7fiZmaJjM8D91bn2QlveKpaD4tp57g47xjBnmvWbo8I/cXfvbdt7aG7tLrKyIMrAztJHf8qs4J4G5YJn4efnIjisR7XXHs3rDtJCITBxJ3jBEDBiJz3rX3Lb/oNo7DuC2Xxz4WVoHbhRUwySx00ypY4ZLUkeYaPVxfe5wTcZ1PMkMSAD+XwNepaK7vRX/aUH6ivGw33jOBjcWA+JPlXqPshf3acCZYHPzyIjtWjCX9v2Z2ohx+i8FGKIFGK9bOVAijFECiBRZVAAoxRilSKFFGomu1wtgGJEwTxH9ZoXeqWwoIYZMD8/6+dS5ItQb8EyKVQ/7VtftClS3x9lfHL0eAdBUm8oHfHyxNesfaJp/DcIncmnsk57byCY9JFeZextg3NUiqCTjjy3LNes/aHYbZqmgmLVlFEZ8RWSBGfwmsmTqjYR4trSTt+BNS/Z/wDGw/5f/Us/lXG/o7rEAWrpx2tue/oKtPZfpV5r+022WV5dGCgSJJJGODViPSeq2kAdSskaKAYBPB7jg/Dzrx7qD7rh8sR9BXtnV7LH3jKAV/RWAiTJAwBjJPbvXkf9m6nc8aZ/EI8VsyBEYJ4ryx+SpELpq/ep8f4GvVug2A2gtSw/vyQT5wfrmvONF0q+lxGa06ieSIAweT2+depdJuJb01m0blslbstDqYDcd/jVT6EuzzH2yM62/wClx/8AUe1UxWtR7VdIvPrL7W7TMpusVZRKlScEVUP0XU/8F/pTj0DNt9mdo+/sf4N3HaTP1moP2k2iG0wj/dv/AK4/hVv9nlv3VxLlxkQLa92QzIp3EfskzUP2+0dy69g2kLhbbAkRA8VJ/cJGCYVpPZb+5vf47X8arn6FqcH3R+q/umr32c6XdW26Ouwu6bdzKowD+sTA71XAmbD7TrI/QkIAAPucDmYY/Tj868kZK9c9v/vdKq2iLhBtSqQxG1XBPhJxxXmj9H1EE+4uwBnwN/LNKAyb7CrOog+ROf8AA9bvpmjV+mszwdq3tuO5tHNYv2P0ty1fLPauKNrZNtxyrgdvWt907Tn+zXWRuK3CBJ/C1s5gc8cetEuxHkNxIq/9ibIe/bB43wYx+dV79OuFGfaRBjaQ288ZAjIzz6GrX2AUnU21gz7wYr0l0JG79ltOH0fiLeG6SIYiSeZg5qu9vup3LFw2bZ8F+ygubgGDbWYAqG/CfUZ48quPZmwV0V0sDtDliRmFXJYweBB+lY/7QrwvXLZtEMEtS5BGZYw2O8R9PSvKCuRcnwY5Sd5bmO38orQ+zXX7lq+xtbWm234geB4ycHnFZ7RuZIUweRzkjgY86tOgqP0+yGEhmCNAgEOpWfoa6JUznXZo/bPqVrWW9NeUBLqlrdxJxiHDjvB8X0itR7H6q5dsakMcBLRXAjIIIzk//NeW9Qm3de2QCVMeROIIH1NelfZvrbX6LqfeMZFsk7seGCCSZEZ/eK8pKki0/wCx5VaYAnjmMj1wfKvRvYHWKwZJyQCP+2QRAxPea86swX2tgEn6QTP5Ctf7G3FTVIoJG7dgzkZAHxGPr6V2bqkjlyxuLR6OBXDWa63ag3GCg+fxj95H1oa7VrbZVLqhMsdwmVGCB6yV8/hmvMer66891wXNwK0Ax5y0RxAxn07V7ylRy4sW7s9B6j7QWraB1YHG74rMEA+dZrT+1sHvJBOceZx51nes6lmRCGLGCsDyJLLBHPP9TXDTJH3hh4XcZ/VP4SCs/wA/lXm3aOmOJRPRtL7U2jbJhmKzugYADEAsYhQQOai9L9oLl69grsidsiYg58xwcnzGKw+j1mWXIVm4UnGQDExzn6mr/UdYRLCrbCgsMnaATtBUEQAADkcdqNzQfFH0P63qxbe5tfaDkK/inHiAIwCMY/jVDb6u+4AiZzk8r2ieDXPXah720tMcbsQeBn1/lUDWNLkjtz+6ikz0So0f9q/4f6/7qNZn9HP7Y+tCp+OI7NZ0/pSEkvct21AiNwUt9Dx61q+sixcvbl1lsW9qgD3kgEAAxnHHasBpltmCNucxifnFC41sGGYDOcj6cYPFcLVnTZrrmn04BP6YjYwN7ZI7Y8/WqrpliyzE6i7b2gGMsxLFp/VJwB5+dUk2d3Kx3zkg8R8DzXbTm2zbbYlu4zx5jHFNIDdaltHcK/fWSqoimFYGRjuBAzTNdc0dsmWtQYIBVjgz+yDOaxd0qsgtDLMgzg1y96oIY7fLg8+vrUKNeQuy56hfsXXTZctokjcVVvwzJ8Ozy8zV7f1uiuWzbN1TLBhusNAgMONsE5FYp7qkT4RPOGx/Wa6NZBBh7Qx649celNpMEattT08CA6wOwsmJxnC+lc9Xr9Kq/ctbduDusmPifAfoIrJ+7gEh7TfDdM0bGjBUTdtLmSCrhvUTBqaQzW+y3UNLZtkXbg3m4WwhaMBRkj0mpeq1mi92RbuqrFdu4WQYnG78MyM1ijorW4/fWjJH7X5DbT7VmzJDXbfEDwuf3LQ6sDcjrnTQFXccCB90cx3J21SrqkbV2rrFBaQz4UPEHEbRJOJxVQiafH36cZw/b/spNpNOQR7+2JMjDY+qUcIVGybqWkdla6wJHE2vIzmFNTLXUdHiCg/a3WYBEE8lRWEu6OwsffLHoGz/APxxUxE0v/EUY7h/4W6VIZb+0ttHX/7cW4Jgwm1sRgEgQPWe/wAauui3NKmntJcNrettQ0oSQ0cE7c5jv2rDstnd/fWwO2GH5lagf2NZn3n6QgXdJO8Rz6wRGKqhHoNxbRbw3IGT4dyAzOAJwBUbq4KWidOzG52++aV/5gN2T6Vh00Ck41qmO4dR9PGKsE6eYAGs9cXB/wC+lSQzR+zhP6Ktu890Md4KkuVIJOGTKkH1Heptzouja1LgNcVSFUW7Q8M8K3u4HPc1mLXRdQfEurYjzDSPr7yndS0Wrt2blxNS7lVJjnt5wRgevan57A89v6M271y2y7thYGDxBjcPOOakdM1fu9XZciYuJgrJILT+H54+VQ9FeaXuTxE8yf6/jQ1z7WTa7EKcA8rxiR/Qr2PLyXfVtQmo1V8mJ3ECPCpCmCDPGPzmrPotw211SbBsa1dyDOAA0CThpH8qxi3WZyxHJ3HB4kGfMjNafQXS1t7YIBYFTg/rqcwfOc/CplxQvJlv0o48pHOeMAT5VoeidR2vbZTkYEThuQeMCFrJuIJHxHzFWul1dtfEoIKhc+ZIg/L+Ve8uUS0b7221J98StwG26KrLPE8hjwuQMc4PnWY1Gs2C2ViCZlRBj1+BHz55BqdYsvctXWZ0YG0rD3khpEwVIwYOI5AMZrPHT3NhDQQpgEbZgenfnHzq924mKpUXel14dyCLZnttIweGB7GfLiRTNVaFnTtKlXuMVbcd2UJYdsSQveqq11VlA8YUrbdYyPDnb9JanHWC5bKvcJYl2C4AB2HkHzPl6c0q5KO2mYGFHiln3jgeQIJxkEVf3dILmlN3eitbEbQMswBJCkYkASJ5zBrLdGCvKXH2LyT38sYJPatLrb1m2oXTXVcXEAYM5RgcwI7EzntgTAq1yxMqdVbO8KH3CDHABMS0ek+fM1W3DJxMmKn27ziwyNtC2xcTd4tzXJDqnwwI7fWor6QkQDLZJ7RGcfnVNiRG9x/zfv8A50qduXz/AD/8UqLGe9dH+zvQNas3Sj7jbRsXGiWWTj5mpP8Asy6fJOy5JM/3rczM1pOg/wD41j/o2/8AQKnVm2dRjj9mvT5nZckx/vG7R/Kkv2adOD7/AHdyf+o3qf41saVKwMfb+zXp44S5/mNTz9nWgiNj8z/eNWtpUWBlP9nuhjbseP8AG1PuewWiKoux4QQIdh9f2j8a1FKgDIH7ONB+xc/zGpx+zrQfsXP8xq1tKgDL6b2B0KFmCPLKUMuThhBjyMHmuP8As40ERsuf5jfvrXUqAMZ/s96cGC7bm5pI+8bMQT+8Ub/2fdNA2sGGC2bpGBAJ54Ej6irPUezYdnYuBuZnUbMq7R49xaSwjnAGIAqO/smGHjdG8BtjdZDQuy2q8tyPdgk95OBOAA6r2G0VyN1tsAKIdlwOMCuS+wfTzI2MSIn7xpHkDn0qTb9lkBYlg252fIflluAYNyBt95gqFMKB2Bplz2VBEe8QEhQSLIH4UdAcMOAwK/slZzQBFuewXTi4XYwYgsAHb8IIB/Mj601fs06cBAtP+IvO9pkiDB8vSrHT+zmy4lwXRNsuR4Px7yDN3xfeOI/FjMHzBWp9nN5Ym4vidnn3ct4u+7d+JeEb9UYg0AVS/Zf00f7u5/mNQufZ50tCFZSpaYBukE7RJiTmBk1d9L9n1suHDZ2lTC7SwKWwZM/tIW+Ln4mTrOmlvc7HCi0T+JTcYg22txvZvJiZO6SBNFgZbSew/SAuxGkNLD78nAkNGfw8z2xQf2D6OyRja1vfIvc2zEOCD+HIz6ir/T9CZWDe9WZctCMAxfedpHvDNuXJ2mTPBHAY3s+5S0pvJ93Z90SLRBaGtsCT7zA+6URzloIxABmLf2ddEWYb9WTOoJ8LQAcng7l+ooP9mnRFDMWYAAFj+ktADg7Z8WARMedaO17Kwuz3uAS6kKVZbpCjcrB5gBcDnzLVIfoBDhrdxECLbW2Pdltvu1upLEv45W63lwvOZdsVIoLX2S9LB3BL3b/f3Djt34qTZ+zHpymVS6D/ANVj++tbo7AtolsTCKqieYUACfXFdqLbCkYG59kHSmJJt3ZJJP3z8nJ709Psl6WBAt3P81z9ZOa3dKjc/YUjHn7NtBtVdtyFMqPetg8Uw/Zl0/HhuiPK64P1Ga2dKjcw2own+ybpm7dsvbvM37h9e5pt37IulsSxt3ZJk/fOM/I1vaVPfL2FIwafZH0sGRbug/8AWufzor9kvSwd3u7pPrec/vNbulRvl7CkYVvsn6YeUung/wB8/bjvXfT/AGY9PTdsW6N3MXX9RHwzWzpUb5ew2r0YP/ZH0v8A4d3/ADrn86Fb2lT+SXsNq9H/2Q==" alt="Package 1">
+            </div>
+            <div class="package-details">
+                <h3>Colosseum in Rome</h3>
+                <p>The Colosseum is not just a historical monument; it's a testament to human ingenuity and resilience. A visit to this ancient amphitheater offers a rich tapestry of experiences, from historical learning to personal enrichment. Whether you're a history buff, a cultural enthusiast, or simply a curious traveler, the Colosseum provides a unique and unforgettable journey into the past.</p>
+                <span class="price">$999</span>
+                <a href="book.html" class="btn">Book Now</a>
+            </div>
+        </div>
+        <div class="package-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7NVR2Jj8zju4SM248ItwBuU5pzHAT7_-7lw&s" alt="Package 1">
+        </div>
+        <div class="package-details">
+            <h3>Taj Mehal</h3>
+            <p>The Taj Mahal is more than just a monument; it is a symbol of love, a masterpiece of architecture, and a significant cultural heritage site. Visiting the Taj Mahal offers an enriching experience that combines historical learning, aesthetic pleasure, and personal reflection. It’s a journey into the past that continues to inspire awe and admiration in travelers from around the world..</p>
+            <span class="price">$950</span>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+    </div><div class="package-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKz_V1455N-BLZ0JQQZB_GpNF9BkgeAlp_Hg&s" alt="Package 1">
+    </div>
+    <div class="package-details">
+        <h3>VARANASI</h3>
+        <p>A tour of Varanasi is a journey into the heart of India’s spiritual and cultural heritage. From the sacred rituals on the ghats of the Ganges to the historical and religious landmarks, Varanasi offers an immersive and transformative experience. Whether you’re seeking spiritual enlightenment, historical knowledge, or cultural enrichment, Varanasi has something profound to offer every traveler.</p>
+        <span class="price">$1009</span>
+        <a href="#" class="btn">Book Now</a>
+    </div>
+</div><div class="package-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxT7yrfLUPc-XH6KCZapND2NGb-O1vHtLi8w&s" alt="Package 1">
+</div>
+<div class="package-details">
+    <h3>Eiffel Tower, museums</h3>
+    <p>No visit to the French capital is complete without a trip to and a trip up its most iconic structure. The 300-meter-tall Eiffel Tower was quite simply, the tallest man-made structure in the world, from its opening in 1889 for 41 years until 1930.
+
+        Use your visit as a stair workout and climb the 300 steps from ground level to the first of three levels on the tower. If you're in great shape, climb another 300 steps to the second level. Then hop on the elevator here to get to the top. Aside from the workout, you'll also skip most of the crowd who want to take the elevator the whole way..</p>
+    <span class="price">$800</span>
+    <a href="book.html" class="btn">Book Now</a>
+</div>
+</div>
+
+        <!-- More package cards can be added here -->
+
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <div class="icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvo6wqdGVl7WwnKHzhv87DRrMc-DwNWoG2w&s" alt="Tour Icon">
+            </div>
+            <div class="service-details">
+                <h3>Guided Tours</h3>
+                <p>Explore the world with our expert guides.</p>
+            </div>
+        </div>
+
+        <!-- More service items can be added here -->
+
+    </section>
+
+    <section class="blog">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-post">
+            <div class="post-thumbnail">
+                <img src="https://dynamic.tourtravelworld.com/blog_images/journey-to-the-divine-experiencing-the-amazing-amarnath-yatra-20240622062940.jpg" alt="Blog Post 1">
+            </div>
+            <div class="post-details">
+                <h3>Journey To The Divine: Experiencing The Amazing Amarnath Yatra</h3>
+                <p>India is a country of saints and gods and devotees can easily find several pilgrimages. People of different castes, creeds, and religions have their faith in different gods. Therefore, it is a strong bond between the pilgrimage of India and the devotees. Amarnath Yatra is one of the holy and most esteemed pilgrimages.
+
+
+                    Permits And Registration
+                    To show your devotion to the Lord Shivji and go to the Amarnath Yatra, it is compulsory to complete the registration and collect a Yatra Permit. Registration should be completed online through the official website of the SASB or at chosen bank branches across India.
+                    
+                    Online Registration
+                    There is a registration form available on the SASB website. You should carefully do the registration. A passport-sized photograph is compulsory. You are required to pay for a scanned copy of a medical certificate approved by an authorized doctor.
+                    
+                    Offline Registration
+                    All you need to do is visit the nearest designated bank branch with your photo and medical certificate to complete the registration procedure.
+                    Yatra Permit
+                    If the registration process is successful, you'll obtain a Yatra Permit that finalizes the date and route of your pilgrimage. You should carry the permit with you at all times during the yatra..</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+        <!-- More blog posts can be added here -->
+    </section>
+
+        <!-- More testimonials can be added here -->
+    </section>
+
+    <section class="gallery">
+        <h2>Explore Our Gallery</h2>
+         <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrvkiU4w2NNHQ5IbOVtU1crYeHxpWVl_JKA&s" data-lightbox="gallery" data-title="Image 1"></a><div class="gallery-images">
+           
+                <img src="https://dastravels.in/wp-content/uploads/2019/12/europe-1000x600.jpg" alt="Image 1">
+            </a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrvkiU4w2NNHQ5IbOVtU1crYeHxpWVl_JKA&s" data-lightbox="gallery" data-title="Image 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrvkiU4w2NNHQ5IbOVtU1crYeHxpWVl_JKA&s" alt="Image 2">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrvkiU4w2NNHQ5IbOVtU1crYeHxpWVl_JKA&s" data-lightbox="gallery" data-title="Image 1"></a><div class="gallery-images"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrvkiU4w2NNHQ5IbOVtU1crYeHxpWVl_JKA&s" data-lightbox="gallery" data-title="Image 1"></a><div class="gallery-images"></div>
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle dropdown functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdowns = document.querySelectorAll('nav ul li');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('mouseover', () => {
+                    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+                    if (dropdownMenu) {
+                        dropdownMenu.style.display = 'block';
+                    }
+                });
+                
+                dropdown.addEventListener('mouseout', () => {
+                    const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+                    if (dropdownMenu) {
+                        dropdownMenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
